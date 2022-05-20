@@ -1,0 +1,17 @@
+<li style="color:rgb(70, 109, 194) ;">Enter Name:<input type="text" #name/>
+<button (click)="doAction(name.value)"><li style="color:rgb(228, 15, 15) ;">go</li></button>
+<hr>
+
+<br>
+<li style="color:rgb(9, 226, 27) ;">possible country</li><br><br>
+
+{{allInfo.name}}
+<table>
+  <tr *ngFor="let x of allInfo.country">
+    <td>Country-code{{x.country_id}}</td><br>
+    
+  </tr>
+  <tr *ngFor="let x of allInfo.country">
+    <td>Probability{{x.probability}}</td><br>
+  </tr>
+</table>
